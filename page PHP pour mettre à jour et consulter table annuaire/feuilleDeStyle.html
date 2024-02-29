@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Annuaire</h1>
+
+    <form action="rechercher.php" method="GET">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom"><br><br>
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom">
+        <input type="submit" value="Rechercher"><br><br>
+    </form>
+
+    
+    <form action="ajouter.php" method="POST">
+        <label for="nomAjout">Nom :</label>
+        <input type="text" id="nomAjout" name="nomAjout"><br><br>
+        <label for="prenomAjout">Prénom :</label>
+        <input type="text" id="prenomAjout" name="prenomAjout"><br><br>
+        <label for="numeroPoste">Numéro de poste :</label>
+        <input type="text" id="numeroPoste" name="numeroPoste">
+        <input type="submit" value="Ajouter"><br><br>
+    </form>
+
+    
+    <form action="modifier.php" method="POST">
+        <label for="idModif">ID :</label>
+        <input type="text" id="idModif" name="idModif"><br><br>
+        <label for="nouveauNumeroPoste">Nouveau numéro de poste :</label>
+        <input type="text" id="nouveauNumeroPoste" name="nouveauNumeroPoste">
+        <input type="submit" value="Modifier"><br><br>
+    </form>
+
+
+    <form action="supprimer.php" method="POST">
+        <label for="idSuppr">ID :</label>
+        <input type="text" id="idSuppr" name="idSuppr">
+        <input type="submit" value="Supprimer">
+    </form>
+</body>
+</html>
